@@ -29,7 +29,6 @@ brew tap josegonzalez/homebrew-php
 brew install php55
 
 # These two formulae didn’t work well last time I tried them:
-#brew install homebrew/dupes/vim
 #brew install homebrew/dupes/screen
 
 # Install other useful binaries
