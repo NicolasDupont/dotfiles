@@ -39,16 +39,6 @@ then
 	sudo dscl . create /Groups/brew GroupMembership `whoami`
 fi
 
-echo -n "Change the group of homebrew installation directory…"
-sudo chgrp -R brew /usr/local
-sudo chgrp -R brew /opt/homebrew-cask/ # no such file or directory
-echo "done"
-
-echo -n "Allow group members to write inside this directory…"
-sudo chmod -R g+w /usr/local
-sudo chmod -R g+w /opt/homebrew-cask/  # no such file or directory
-echo "done"
-
 echo -n "Change the group of homebrew cache directory…"
 sudo chgrp -R brew /Library/Caches/Homebrew
 echo "done"
